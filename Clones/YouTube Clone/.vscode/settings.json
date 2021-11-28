@@ -51,7 +51,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "Clones/YouTube Clone/dist/css/"
+            "savePath": "/Clones/YouTube Clone/dist/css/"
         }
     ],
     "workbench.editor.enablePreview": false,
