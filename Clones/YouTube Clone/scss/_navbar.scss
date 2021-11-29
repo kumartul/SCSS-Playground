@@ -4,8 +4,6 @@
 
     background: $primary-bg-color;
 
-    border: 1px solid red;
-
     @include flex-row;
 
     svg{
