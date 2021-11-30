@@ -160,7 +160,6 @@ html {
 
 .sidebar {
   font-family: 'Roboto', sans-serif;
-  border: 1px solid red;
   height: calc(100vh - 5.6rem);
   width: 24rem;
   overflow: scroll;
