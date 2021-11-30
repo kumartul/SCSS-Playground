@@ -7,6 +7,16 @@
     flex-direction: column;
 }
 
+@mixin content-vertical-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin content-horizontal-center{
+    display: flex;
+    justify-content: center;
+}
+
 @mixin content-center{
     display: flex;
     justify-content: center;
