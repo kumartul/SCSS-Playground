@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,12 @@
 
 html {
   font-size: 62.5%;
+}
+
+.global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 ::-webkit-scrollbar {
@@ -149,5 +156,106 @@ html {
 .navbar .action div,
 .navbar .action img {
   margin-right: 2.9rem;
+}
+
+.sidebar {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid red;
+  height: calc(100vh - 5.6rem);
+  width: 24rem;
+  overflow: scroll;
+}
+
+.sidebar .suite {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .suite .tab {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem 2rem;
+}
+
+.sidebar .suite .tab svg {
+  pointer-events: none;
+  display: block;
+  display: block;
+  pointer-events: none;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.sidebar .suite .tab span {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.sidebar .suite .tab:hover {
+  background-color: #f2f2f2;
+}
+
+.sidebar .suite .active {
+  background-color: #e5e5e5;
+}
+
+.sidebar .suite .active span {
+  font-weight: 500;
+}
+
+.sidebar .suite .active:hover {
+  background-color: #d9d9d9 !important;
+}
+
+.sidebar .suite h3 {
+  color: #606060;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.8rem 2.4rem;
+  text-transform: uppercase;
+}
+
+.sidebar .subscriptions img {
+  border-radius: 50%;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.sidebar .footer {
+  padding: 1rem 2rem;
+}
+
+.sidebar .footer .lower {
+  margin-top: 1rem;
+}
+
+.sidebar .footer a {
+  color: #606060;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-right: 0.8rem;
+}
+
+.sidebar .footer .copyright {
+  margin-top: 1rem;
+}
+
+.sidebar .footer .copyright span {
+  color: #909090;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,101 @@
+.sidebar{
+    font-family: 'Roboto', sans-serif;
+
+    border: 1px solid red;
+
+    height: calc(100vh - 5.6rem);   // Total viewport height - Navbar's height
+    width: 24rem;
+
+    overflow: scroll;
+
+    .suite{
+        padding: 1rem 0;
+
+        border-bottom: 1px solid #e5e5e5;
+
+        @include flex-col;
+
+        .tab{
+            cursor: pointer;
+
+            @include content-vertical-center;
+
+            padding: 0.75rem 2rem;
+
+            svg{
+                pointer-events: none;
+
+                display: block;
+
+                @include svg;
+            }
+
+            span{
+                font-size: 1.4rem;
+                margin-left: 2rem;
+            }
+
+            &:hover{
+                background-color: darken(#fff, 5%);
+            }
+        }
+
+        .active{
+            background-color: #e5e5e5;
+            
+            span{
+                font-weight: 500;
+            }
+
+            &:hover{
+                background-color: darken(#fff, 15%) !important;
+            }
+        }
+
+        h3{
+            color: #606060;
+            font-weight: 500;
+            font-size: 1.4rem;
+
+            padding: 0.8rem 2.4rem;
+            
+            text-transform: uppercase;
+        }
+    }
+
+    .subscriptions{
+        img{
+            border-radius: 50%;
+
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+    }
+
+    .footer{
+        padding: 1rem 2rem;
+
+        .lower{
+            margin-top: 1rem;
+        }
+
+        a{
+            color: #606060;
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-right: 0.8rem;
+        }
+
+        .copyright{
+            margin-top: 1rem;
+
+            span{
+                color: #909090;
+                font-size: 1.2rem;
+                font-weight: 400;
+                
+                line-height: 1.8;
+            }
+        }
+    }
+}
