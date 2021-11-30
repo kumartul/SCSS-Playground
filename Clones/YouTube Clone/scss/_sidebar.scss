@@ -1,8 +1,6 @@
 .sidebar{
     font-family: 'Roboto', sans-serif;
 
-    border: 1px solid red;
-
     height: calc(100vh - 5.6rem);   // Total viewport height - Navbar's height
     width: 24rem;
 
@@ -93,7 +91,7 @@
                 color: #909090;
                 font-size: 1.2rem;
                 font-weight: 400;
-                
+
                 line-height: 1.8;
             }
         }
