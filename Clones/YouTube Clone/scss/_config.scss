@@ -14,3 +14,7 @@ html{
 .global{
     @include flex-row;
 }
+.container{
+    width: calc(100vw - 24rem); // Total viewport width - Width of sidebar
+    border: 1px solid red;  // For DEBUGGING
+}
