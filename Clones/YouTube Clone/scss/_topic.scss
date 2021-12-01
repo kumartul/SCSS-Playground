@@ -8,6 +8,10 @@
 
     user-select: none;
 
+    position: fixed;
+    top: 5.85rem;    // Height of navbar + 0.25rem
+    left: 24rem;    // Width of sidebar
+
     @include content-vertical-center;
 
     .topic{
