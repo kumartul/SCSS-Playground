@@ -257,4 +257,12 @@ html {
   font-weight: 400;
   line-height: 1.8;
 }
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
