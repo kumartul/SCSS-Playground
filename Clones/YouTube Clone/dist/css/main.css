@@ -19,6 +19,11 @@ html {
   display: flex;
 }
 
+.container {
+  width: calc(100vw - 24rem);
+  border: 1px solid red;
+}
+
 ::-webkit-scrollbar {
   width: 16px;
 }
@@ -28,7 +33,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #606060;
+  background-color: #858484;
   border: 4px solid #fff;
   border-radius: 10px;
 }
@@ -156,6 +161,74 @@ html {
 .navbar .action div,
 .navbar .action img {
   margin-right: 2.9rem;
+}
+
+.topics {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 2rem;
+  height: 5.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topics .topic {
+  margin: 1.2rem;
+  margin-left: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.6rem;
+  color: #030303;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 1.2rem;
+  cursor: pointer;
+  height: 3.2rem;
+  min-width: 1.2rem;
+  overflow: hidden;
+  letter-spacing: 0.2px;
+  line-height: 2rem;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
+  transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topics .topic:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.topics .active {
+  background-color: black;
+  color: white;
+}
+
+.topics .active:hover {
+  background-color: black;
+  color: white;
+}
+
+.topics div:last-of-type {
+  cursor: pointer;
+}
+
+.topics div:last-of-type svg {
+  display: block;
+  pointer-events: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-left: 3rem;
 }
 
 .sidebar {

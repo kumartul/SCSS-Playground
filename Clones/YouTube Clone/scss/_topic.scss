@@ -1,0 +1,65 @@
+.topics{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;    
+
+    padding: 0 2rem;
+
+    height: 5.6rem;
+
+    @include content-vertical-center;
+
+    .topic{
+        margin: 1.2rem;
+        margin-left: 0;
+
+        background-color: rgba(0, 0, 0, 0.05);
+        
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 1.6rem;
+
+        color: #030303;
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        
+        padding: 0 1.2rem;
+
+        cursor: pointer;
+
+        height: 3.2rem;
+        min-width: 1.2rem;
+
+        overflow: hidden;
+
+        letter-spacing: 0.2px;
+
+        line-height: 2rem;
+
+        transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
+
+        @include content-center;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .active{
+        background-color: black;
+        color: white;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    div:last-of-type{
+        cursor: pointer;
+
+        svg{
+            @include svg($width: 1.6rem, $height: 1.6rem);
+            
+            margin-left: 3rem;
+        }
+    }
+}
