@@ -168,6 +168,10 @@ html {
   border-bottom: 1px solid #e5e5e5;
   padding: 0 2rem;
   height: 5.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

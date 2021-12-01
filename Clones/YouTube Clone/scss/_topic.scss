@@ -6,6 +6,8 @@
 
     height: 5.6rem;
 
+    user-select: none;
+
     @include content-vertical-center;
 
     .topic{
@@ -58,7 +60,7 @@
 
         svg{
             @include svg($width: 1.6rem, $height: 1.6rem);
-            
+
             margin-left: 3rem;
         }
     }
