@@ -6,6 +6,10 @@
 
     overflow: scroll;
 
+    position: fixed;
+    top: 5.75rem;    // Height of the navbar + 0.15rem
+    left: 0;
+
     .suite{
         padding: 1rem 0;
 
