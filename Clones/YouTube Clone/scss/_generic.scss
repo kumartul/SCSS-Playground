@@ -31,3 +31,76 @@
     height: $height;
     width: $width;
 }
+
+@mixin video{
+    @include flex-col;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    width: 26rem;
+    height: 24rem;
+
+    margin-left: 0.93rem;
+
+    flex: 1 1 1;
+
+    .thumbnail{
+        width: 26rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .info{
+        @include flex-col;
+                
+        .video-info{
+            margin-top: 1rem;
+
+            @include content-vertical-center;
+
+            .publisher{
+                img{
+                    border-radius: 50%;
+
+                    width: 4rem;
+                }
+            }
+
+            .title{
+                height: auto;
+                max-height: 4rem;
+
+                margin-left: 1rem;
+
+                overflow: hidden;
+
+                strong{
+                    color: #030303;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    font-family: 'Roboto', sans-serif;
+
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        .channel-info{
+            margin-top: 0.5rem;
+
+            p{
+                color: #606060;
+                font-size: 1.2rem;
+                font-weight: 400;
+                font-family: 'Roboto', sans-serif;
+
+                margin-left: 4rem + 1rem;   // Width of image + 1rem
+            }
+        }
+    }
+}

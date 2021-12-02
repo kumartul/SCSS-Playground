@@ -1,18 +1,37 @@
 .container{
-    background-color: #f9f9f9;
-
     padding: 2rem;
 
-    position: absolute;
-    top: 5.6rem + 5.6rem + 0.25rem; // Height of navbar + Height of topics bar + 0.25rem
-    left: 24rem;    // Width of sidebar
-
-    z-index: 1 !important;
-
     .videos{
+        border: 1px solid red;
+
+        background-color: #f9f9f9;
+
+        width: calc(100vw - 24rem);
+        height: 100%;
+
+        padding: 2rem;
+        padding-bottom: 5rem;
+
         overflow: scroll !important;
-        position: relative;
-        top: 0;
-        left: 0;
+
+        position: fixed;
+        top: 5.6rem + 5.6rem + 0.25rem;
+        left: 24rem;
+
+        @include flex-row;
+
+        flex-wrap: wrap;
+
+        .video{
+            @include video;
+        }
+
+        @for $i from 1 through 10{
+            @if $i % 5 == 0 or $i == 1{
+                .video:nth-of-type(#{$i}){
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }
