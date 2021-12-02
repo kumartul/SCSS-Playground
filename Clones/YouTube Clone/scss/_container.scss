@@ -1,0 +1,18 @@
+.container{
+    background-color: #f9f9f9;
+
+    padding: 2rem;
+
+    position: absolute;
+    top: 5.6rem + 5.6rem + 0.25rem; // Height of navbar + Height of topics bar + 0.25rem
+    left: 24rem;    // Width of sidebar
+
+    z-index: 1 !important;
+
+    .videos{
+        overflow: scroll !important;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
