@@ -1,0 +1,131 @@
+.latest-video-posts{
+    font-family: 'Roboto', sans-serif;
+    
+    width: 100%;
+    
+    padding: 2rem 0;
+
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+
+    .posts{
+        @include flex-row;
+
+        flex-wrap: wrap;
+    }
+
+    h2{
+        color: #030303;
+        font-size: 2rem;
+        font-weight: 400;
+
+        line-height: 2.8rem;
+
+        margin-bottom: 2rem;
+    }
+
+    .post{
+        overflow: hidden;
+
+        border: 1px solid blue;
+
+        flex: 1 1 1;
+
+        background-color: white;
+
+        border: 1px solid lightgrey;
+
+        padding: 1.2rem 2.4rem;
+        
+        width: 30%;
+        height: 19.6rem;
+
+        margin-left: 4rem;
+
+        @include flex-col;
+
+        .info{
+            @include content-vertical-center;
+
+            .image{
+                img{
+                    height: 2.5rem;
+                    width: 2.5rem;
+
+                    border-radius: 50%;
+                }
+            }
+            .post-info{
+                color: #606060;
+                font-weight: 400;
+                font-size: 1.2rem;
+                
+                line-height: 1.8;
+
+                margin-left: 1rem;
+            }
+        }
+
+        .content{
+            @include flex-row;
+
+            margin-top: 1rem;
+
+            .text{
+                width: 70%;
+                height: 10rem;
+                
+                overflow: hidden;
+
+                font-size: 1.4rem;
+                font-weight: 400;
+
+                line-height: 2rem;
+
+                margin-right: 0.5rem;
+
+                a{
+                    color: #065fd4;
+                }
+            }
+            .image{
+                cursor: pointer;
+                
+                img{
+                    width: 10rem;
+                    width: 10rem;
+                }
+            }
+        }
+
+        .status{
+            @include flex-row;
+
+            justify-content: space-between;
+
+            margin-top: 1rem;
+
+            div:not(.action){
+                cursor: pointer;
+            }
+
+            .action,
+            .response{
+                @include flex-row;
+
+                #comments,
+                #likes{
+                    margin-right: 1rem;
+                }
+            }
+
+            svg{
+                @include svg;
+            }
+        }
+    }
+
+    .post:first-of-type{
+        margin-left: 0;
+    }
+}
