@@ -362,7 +362,7 @@ html {
   width: calc(100vw - 24rem);
   height: 100%;
   padding: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
   overflow: scroll !important;
   position: fixed;
   top: 11.45rem;
@@ -473,6 +473,7 @@ html {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 2rem 0;
+  padding-bottom: 0;
   border-top: 4px solid rgba(0, 0, 0, 0.1);
   border-bottom: 4px solid rgba(0, 0, 0, 0.1);
 }
@@ -604,5 +605,37 @@ html {
 
 .latest-video-posts .post:first-of-type {
   margin-left: 0;
+}
+
+.latest-video-posts .see-more {
+  margin-top: 3rem;
+}
+
+.latest-video-posts .see-more button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.latest-video-posts .see-more button svg {
+  display: block;
+  pointer-events: none;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.latest-video-posts .see-more button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 /*# sourceMappingURL=main.css.map */

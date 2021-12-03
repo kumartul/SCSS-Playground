@@ -4,6 +4,7 @@
     width: 100%;
     
     padding: 2rem 0;
+    padding-bottom: 0;
 
     border-top: 4px solid rgba(0, 0, 0, 0.1);
     border-bottom: 4px solid rgba(0, 0, 0, 0.1);
@@ -127,5 +128,31 @@
 
     .post:first-of-type{
         margin-left: 0;
+    }
+
+    .see-more{
+        margin-top: 3rem;
+
+        button{
+            width: 100%;
+
+            background-color: transparent;
+
+            border: none;
+
+            cursor: pointer;
+
+            padding: 1rem 0;
+
+            @include content-center;
+            
+            svg{
+                @include svg;
+            }
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+        }
     }
 }
