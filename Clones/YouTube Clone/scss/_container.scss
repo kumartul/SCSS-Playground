@@ -10,7 +10,7 @@
         height: 100%;
 
         padding: 2rem;
-        padding-bottom: 15rem;
+        padding-bottom: 10rem;
 
         overflow: scroll !important;
 
@@ -26,14 +26,7 @@
             @include video;
 
             margin-bottom: 4rem;
-        }
-
-        @for $i from 1 through 10{
-            @if $i % 5 == 0 or $i == 1{
-                .video:nth-of-type(#{$i}){
-                    margin-left: 0;
-                }
-            }
+            margin-left: 0.25rem;
         }
     }
 }
