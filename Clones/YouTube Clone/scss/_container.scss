@@ -24,6 +24,8 @@
 
         .video{
             @include video;
+
+            margin-bottom: 4rem;
         }
 
         @for $i from 1 through 10{
