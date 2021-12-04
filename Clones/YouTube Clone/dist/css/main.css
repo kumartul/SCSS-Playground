@@ -446,7 +446,7 @@ html {
 }
 
 .container .videos .video .thumbnail {
-  width: 26rem;
+  width: 100%;
 }
 
 .container .videos .video .thumbnail img {
@@ -510,12 +510,19 @@ html {
   .videos {
     left: 7.2rem !important;
     width: calc(100vw - 7.2rem) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-}
-
-@media screen and (max-width: 1345) {
   .videos .video {
-    width: 100% !important;
+    width: auto !important;
+    height: auto !important;
   }
 }
 

@@ -18,6 +18,8 @@
 
         @include flex-row;
 
+        flex: 1 1 1; 
+
         flex-wrap: wrap;
 
         .video{
@@ -25,6 +27,23 @@
 
             margin-bottom: 4rem;
             margin-left: 0.25rem;
+        }
+    }
+}
+
+// Responsiveness 
+
+@media screen and (max-width: 1212px){
+    .videos{
+        left: 7.2rem !important;
+
+        width: calc(100vw - 7.2rem) !important;
+
+        @include content-center;
+
+        .video{
+            width: auto !important;
+            height: auto !important;
         }
     }
 }
