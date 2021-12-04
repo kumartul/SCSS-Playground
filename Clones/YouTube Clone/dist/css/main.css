@@ -199,7 +199,9 @@ html {
   cursor: pointer;
   height: 3.2rem;
   min-width: 1.2rem;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   letter-spacing: 0.2px;
   line-height: 2rem;
   -webkit-transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
@@ -350,6 +352,44 @@ html {
 
 .sidebar:hover::-webkit-scrollbar {
   display: block;
+}
+
+@media screen and (max-width: 1212px) {
+  .sidebar {
+    width: 7.2rem;
+  }
+  .sidebar .subscriptions,
+  .sidebar .footer,
+  .sidebar .actions,
+  .sidebar .more {
+    display: none;
+  }
+  .sidebar .suite:first-of-type {
+    border: none;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .sidebar .suite:nth-of-type(2) {
+    border: none;
+    padding: 0;
+  }
+  .sidebar .suite:nth-of-type(2) .tab:not(:first-of-type) {
+    display: none;
+  }
+  .sidebar .suite .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 0;
+  }
+  .sidebar .suite .tab span {
+    margin-right: 1.55rem;
+    font-size: 1.1rem;
+  }
 }
 
 .container {
