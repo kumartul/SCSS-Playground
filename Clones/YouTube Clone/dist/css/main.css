@@ -415,6 +415,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1;
+          flex: 1 1 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -507,6 +510,12 @@ html {
   .videos {
     left: 7.2rem !important;
     width: calc(100vw - 7.2rem) !important;
+  }
+}
+
+@media screen and (max-width: 1345) {
+  .videos .video {
+    width: 100% !important;
   }
 }
 
@@ -679,5 +688,19 @@ html {
 
 .latest-video-posts .see-more button:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 975px) {
+  .posts {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .posts .post {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

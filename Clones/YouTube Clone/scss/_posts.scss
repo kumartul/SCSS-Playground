@@ -157,3 +157,16 @@
         }
     }
 }
+
+@media screen and (max-width: 975px){
+    .posts{
+        flex-direction: column !important;
+
+        .post{
+            width: 100%;
+
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
