@@ -34,7 +34,9 @@
         height: 3.2rem;
         min-width: 1.2rem;
 
+        white-space: nowrap;
         overflow: hidden;
+        text-overflow: ellipsis;
 
         letter-spacing: 0.2px;
 
@@ -67,5 +69,13 @@
 
             margin-left: 3rem;
         }
+    }
+}
+
+// Responsiveness 
+
+@media screen and (max-width: 1212px){
+    .topics{
+        left: 7.2rem;
     }
 }

@@ -243,6 +243,12 @@ html {
   margin-left: 3rem;
 }
 
+@media screen and (max-width: 1212px) {
+  .topics {
+    left: 7.2rem;
+  }
+}
+
 .sidebar {
   font-family: 'Roboto', sans-serif;
   height: calc(100vh - 5.6rem);
@@ -495,6 +501,13 @@ html {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   margin-left: 5rem;
+}
+
+@media screen and (max-width: 1212px) {
+  .videos {
+    left: 7.2rem !important;
+    width: calc(100vw - 7.2rem) !important;
+  }
 }
 
 .latest-video-posts {
