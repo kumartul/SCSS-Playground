@@ -362,6 +362,7 @@ html {
 
 .sidebar-close {
   width: 7.2rem;
+  overflow: hidden;
 }
 
 .sidebar-close .subscriptions,
