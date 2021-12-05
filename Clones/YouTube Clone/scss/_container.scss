@@ -32,18 +32,15 @@
 }
 
 // Responsiveness 
+.videos-left{
+    left: 7.2rem !important;
 
-@media screen and (max-width: 1212px){
-    .videos{
-        left: 7.2rem !important;
+    width: calc(100vw - 7.2rem) !important;
 
-        width: calc(100vw - 7.2rem) !important;
+    @include content-center;
 
-        @include content-center;
-
-        .video{
-            width: auto !important;
-            height: auto !important;
-        }
+    .video{
+        width: auto !important;
+        height: auto !important;
     }
 }

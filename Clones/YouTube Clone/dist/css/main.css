@@ -511,24 +511,23 @@ html {
   margin-left: 5rem;
 }
 
-@media screen and (max-width: 1212px) {
-  .videos {
-    left: 7.2rem !important;
-    width: calc(100vw - 7.2rem) !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .videos .video {
-    width: auto !important;
-    height: auto !important;
-  }
+.videos-left {
+  left: 7.2rem !important;
+  width: calc(100vw - 7.2rem) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videos-left .video {
+  width: auto !important;
+  height: auto !important;
 }
 
 .latest-video-posts {

@@ -1,12 +1,16 @@
-const sidebar = document.querySelector(".sidebar");
 const hamburger = document.querySelector(".hamburger");
+
+const sidebar = document.querySelector(".sidebar");
+const videoContainer = document.querySelector(".videos");
 
 hamburger.addEventListener('click', () => {
     if(!sidebar.classList.contains("sidebar-close")){
         sidebar.classList.add("sidebar-close");
+        videoContainer.classList.add("videos-left");
     }
     else{
         sidebar.classList.remove("sidebar-close");
+        videoContainer.classList.remove("videos-left");
     }
 });
 
