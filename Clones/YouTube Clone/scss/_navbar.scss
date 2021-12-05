@@ -24,6 +24,8 @@
     .search,
     .action{
         @include content-center;
+        
+        user-select: none;
     }
 
     div{
