@@ -1,0 +1,76 @@
+{
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "cSpell.userWords": [
+        "aboutus",
+        "atul",
+        "bday",
+        "behaviour",
+        "btns",
+        "catid",
+        "conpass",
+        "contactus",
+        "dbconnect",
+        "flexbox",
+        "jumbotrons",
+        "lerp",
+        "loggedin",
+        "mathf",
+        "missamari",
+        "mono",
+        "noresult",
+        "preconnect",
+        "privacypolicy",
+        "servername",
+        "supportus",
+        "threadid",
+        "undislike",
+        "unfollow",
+        "unfollowing",
+        "unsetting"
+    ],
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "tabnine.experimentalAutoImports": true,
+    "editor.mouseWheelZoom": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 1,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/Clones/YouTube Clone/dist/css/"
+        }
+    ],
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Default Dark+",
+    "explorer.confirmDragAndDrop": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[handlebars]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.accessibilitySupport": "off"
+}
