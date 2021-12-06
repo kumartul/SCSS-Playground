@@ -8,7 +8,8 @@
         "../../scss/_config.scss",
         "../../scss/_sidebar.scss",
         "../../scss/_navbar.scss",
-        "../../scss/_footer.scss"
+        "../../scss/_footer.scss",
+        "../../scss/_container.scss"
     ],
     "names": [],
     "file": "main.css"
