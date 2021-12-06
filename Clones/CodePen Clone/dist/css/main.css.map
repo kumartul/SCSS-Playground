@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/variables.scss",
+        "../../scss/generic.scss",
+        "../../scss/config.scss",
+        "../../scss/sidebar.scss",
+        "../../scss/navbar.scss",
+        "../../scss/footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
