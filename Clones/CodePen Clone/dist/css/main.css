@@ -25,7 +25,7 @@ body {
 .sidebar {
   background-color: #1e1f26;
   width: 18.8rem;
-  height: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -121,5 +121,120 @@ body {
 
 .sidebar .advertisement small:hover {
   color: white;
+}
+
+header {
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .search-bar {
+  width: 85%;
+}
+
+.navbar .search-bar svg {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  top: 0.25rem;
+  left: 3rem;
+}
+
+.navbar .search-bar svg path {
+  fill: #70768f;
+}
+
+.navbar .search-bar input {
+  background-color: #262931;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: 700;
+  font-family: Lato;
+  font-size: 1.95rem;
+  padding: 1rem;
+  padding-left: 4rem;
+  width: 97%;
+}
+
+.navbar .search-bar input:focus {
+  background-color: #2c303a;
+}
+
+.navbar .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .btn-container button:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+  background-color: #49d073;
+  color: black;
+  margin-left: 1rem;
+}
+
+.navbar .btn-container button:first-of-type:hover {
+  background-color: #258e48;
+  color: white;
+}
+
+.navbar .btn-container button:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+  background-color: #434756;
+  color: white;
+  margin-left: 1rem;
+}
+
+.navbar .btn-container button:last-of-type:hover {
+  background-color: #5a5f72;
+}
+
+.container {
+  background-color: #131417;
+  width: calc(100% - 18.8rem);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 18.8rem;
 }
 /*# sourceMappingURL=main.css.map */

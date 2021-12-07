@@ -1,0 +1,61 @@
+header{
+    padding-top: 1.5rem;
+
+    width: 100%;
+}
+.navbar{
+    @include flex-row;
+
+    width: 100%;
+
+    .search-bar{
+        width: 85%;
+
+        svg{
+            height: 2rem;
+            width: 2rem;
+
+            position: relative;
+            top: 0.25rem;
+            left: 3rem;
+
+            path{
+                fill: hsla(228, 12%, 50%, 1);
+            }
+        }
+
+        input{
+            background-color: hsla(224, 13%, 17%, 1);
+
+            border: none;
+            border-radius: 0.4rem;
+
+            color: hsla(0, 0%, 100%, 1);
+            font-weight: 700;
+            font-family: Lato;
+            font-size: 1.95rem;
+
+            padding: 1rem;
+            padding-left: 4rem;
+
+            width: 97%;
+
+            &:focus{
+                background-color: hsla(223, 14%, 20%, 1);
+            }
+        }
+    }
+
+    .btn-container{
+        @include flex-row;
+
+        button:first-of-type{
+            @include btn-primary;
+            margin-left: 1rem;
+        }
+        button:last-of-type{
+            @include btn-secondary;
+            margin-left: 1rem;
+        }
+    }
+}

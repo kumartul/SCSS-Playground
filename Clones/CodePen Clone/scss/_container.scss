@@ -1,0 +1,10 @@
+.container{
+    background-color: $secondary;
+
+    width: calc(100% - 18.8rem);
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: $sidebar-width;
+}
