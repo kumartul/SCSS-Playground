@@ -1,4 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+.brown {
+  color: #a88038;
+}
+
+.yellow {
+  color: #e1ca72;
+}
+
+.white {
+  color: white;
+}
+
+.green {
+  color: #74b087;
+}
+
+.purple {
+  color: #9f8198;
+}
+
+.orange {
+  color: #de7300;
+}
+
+.blue {
+  color: #7a99ad;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -232,9 +261,203 @@ header {
 .container {
   background-color: #131417;
   width: calc(100% - 18.8rem);
-  height: 100vh;
+  height: auto;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   left: 18.8rem;
+}
+
+.intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3.2rem;
+  padding: 3rem;
+}
+
+.intro .text .logo {
+  margin: 3rem 0;
+}
+
+.intro .text .logo svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.intro .text .logo svg path {
+  fill: white;
+}
+
+.intro .text h1 {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  font-family: 'Archivo Black', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.intro .text h3 {
+  color: #c6c8d2;
+  font-size: 1.8rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.intro .text button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+  background-color: #49d073;
+  color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.intro .text button:hover {
+  background-color: #258e48;
+  color: white;
+}
+
+.intro .visual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.intro .visual img {
+  z-index: 0;
+  position: relative;
+  top: 38.5rem;
+  left: 17.5rem;
+}
+
+.intro .visual .hero {
+  width: 40%;
+  height: 41rem;
+  border-radius: 1rem;
+  background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%);
+  position: absolute;
+  top: 12rem;
+  right: auto;
+}
+
+.intro .visual .editors {
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  z-index: 101;
+}
+
+.intro .visual .editors article {
+  width: 30rem;
+  height: 14rem;
+  background-color: #1d1e22;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  padding-top: 0 !important;
+  position: relative;
+}
+
+.intro .visual .editors article header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.6rem auto 3.6rem;
+      grid-template-columns: 3.6rem auto 3.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .visual .editors article header h3 {
+  color: #c5c8d4;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  letter-spacing: 1.57px;
+}
+
+.intro .visual .editors article .code {
+  padding: 1rem 0;
+}
+
+.intro .visual .editors article .code span {
+  font-family: 'Consolas';
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.intro .visual .editors article .code #cursor {
+  color: white;
+  font-size: 1.5rem;
+  -webkit-animation-name: cursor-blink;
+          animation-name: cursor-blink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.intro .visual .editors article:first-of-type {
+  right: 8rem;
+}
+
+.intro .visual .editors article:nth-of-type(2) {
+  top: 1rem;
+  right: 3rem;
+}
+
+.intro .visual .editors article:last-of-type {
+  top: 2rem;
+  right: 10rem;
+}
+
+@-webkit-keyframes cursor-blink {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
