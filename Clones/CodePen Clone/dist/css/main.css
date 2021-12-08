@@ -261,11 +261,15 @@ header {
 .container {
   background-color: #131417;
   width: calc(100% - 18.8rem);
-  height: auto;
-  overflow-x: hidden;
+  height: 200vh;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 18.8rem;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 .intro {
@@ -441,6 +445,107 @@ header {
 .intro .visual .editors article:last-of-type {
   top: 2rem;
   right: 10rem;
+}
+
+.features {
+  width: 95%;
+  margin: auto;
+  margin-top: 4rem !important;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.features .feature {
+  background-color: #2c303a;
+  padding: 2.25rem;
+  border-radius: 1rem;
+  z-index: 3;
+}
+
+.features .feature .image {
+  background-color: #121316;
+  border-radius: 1rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-top: -5rem;
+  padding: 1rem;
+}
+
+.features .feature h2 {
+  color: white;
+  font-weight: lighter;
+  font-size: 2.7rem;
+  font-family: 'Archivo Black';
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+.features .feature p {
+  margin-top: 1rem;
+  color: #c6c8d2;
+  font-size: 1.5rem;
+  font-family: Lato;
+  line-height: 1.5;
+}
+
+.features .feature p a {
+  color: #75daff;
+  font-weight: bold;
+}
+
+.features .feature p a:hover {
+  color: white;
+}
+
+.features .feature p .pro {
+  color: black;
+  font-size: 1.2rem;
+  background-color: #ffdc42;
+  margin: 0 0.2rem;
+  padding: 1.875px 5.625px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.features .feature button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+  background-color: #434756;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.features .feature button:hover {
+  background-color: #5a5f72;
+}
+
+.features > img {
+  position: absolute;
+  top: 29.5rem;
+  left: -17rem;
+  z-index: 0;
+  width: 45rem;
 }
 
 @-webkit-keyframes cursor-blink {

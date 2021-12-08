@@ -2,13 +2,17 @@
     background-color: $secondary;
 
     width: calc(100% - 18.8rem);
-    height: auto;
+    height: 200vh;
 
-    overflow-x: hidden;
+    overflow: hidden;
 
     position: absolute;
     top: 0;
     left: $sidebar-width;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .intro{
@@ -158,5 +162,104 @@
                 }
             }
         }
+    }
+}
+
+.features{
+    width: 95%;
+
+    margin: auto;
+    margin-top: 4rem !important;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+
+    .feature{
+        background-color: hsla(223, 14%, 20%, 1);
+
+        padding: 2.25rem;
+
+        border-radius: 1rem;
+
+        z-index: 3;
+
+        .image{
+            background-color: hsla(225, 10%, 8%, 1);
+
+            border-radius: 1rem;
+
+            width: 7.5rem;
+            height: 7.5rem;
+
+            margin-top: -5rem;
+
+            padding: 1rem;
+        }
+
+        h2{
+            color: white;
+            font-weight: lighter;
+            font-size: 2.7rem;
+            font-family: 'Archivo Black';
+
+            line-height: 1.2;
+
+            margin-top: 2rem;
+        }
+
+        p{
+            margin-top: 1rem;
+
+            color: hsla(230, 12%, 80%, 1);
+            font-size: 1.5rem;
+            font-family: Lato;
+
+            line-height: 1.5;
+
+            a{
+                color: hsla(196, 100%, 73%, 1);
+                font-weight: bold;
+
+                &:hover{
+                    color: white;
+                }
+            }
+
+            .pro{
+                color: black;
+                font-size: 1.2rem;
+
+                background-color: hsla(49, 100%, 63%, 1);
+
+                margin: 0 0.2rem;
+                padding: 1.875px 5.625px;
+
+                border-radius: 2px;
+
+                display: inline-block;
+            }
+        }
+
+        button{
+            @include btn-secondary;
+
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            margin-top: 2rem;
+        }
+    }
+
+    & > img{
+        position: absolute;
+        top: 29.5rem;
+        left: -17rem;
+
+        z-index: 0;
+
+        width: 45rem;
     }
 }
