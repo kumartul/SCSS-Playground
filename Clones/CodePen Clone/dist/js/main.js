@@ -3,6 +3,10 @@ const images = document.querySelectorAll(".features-container .images img");
 
 Array.from(features).forEach(feature => {
     feature.addEventListener('click', event => {
+        // Prevent the default behaviour of the 'summary' element to unfold the content
+        event.preventDefault();
+
+        // Grab the topic of the target element
         const topic = event.target.parentElement.dataset.topic;
 
         // Iterate through all the images and if the image is active, then remove it and
@@ -22,10 +26,14 @@ Array.from(features).forEach(feature => {
             }
         });
 
-        // Iterate through all the features and close all the features except the target 
-        // feature
-        Array.from(features).filter(currentFeature => currentFeature != event.target.parentElement).forEach(featureClicked => {
-            featureClicked.removeAttribute('open'); 
+        // Iterate through all the features and close all the features
+        Array.from(features).forEach(featureClicked => {
+            if(featureClicked != event.target.parentElement){
+                featureClicked.removeAttribute('open');
+            }
+            else{
+                featureClicked.setAttribute("open", "");
+            }
         });
     });
 });
