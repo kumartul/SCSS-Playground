@@ -2,7 +2,7 @@
     background-color: $secondary;
 
     width: calc(100% - 18.8rem);
-    height: 200vh;
+    height: auto;
 
     overflow: hidden;
 
@@ -75,8 +75,8 @@
             z-index: 0;
 
             position: relative;
-            top: 38.5rem;
-            left: 17.5rem;
+            top: 37.5rem;
+            left: 3.75rem;
         }
 
         .hero{
