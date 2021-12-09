@@ -316,6 +316,12 @@
 
             width: calc(100vw - 21rem - 75rem);
 
+            position: absolute;
+            top: auto;
+            left: auto;
+
+            z-index: 3;
+
             details{
                 font-family: Lato;
 
@@ -356,14 +362,14 @@
                     transition: all 0.3s ease;
                 }
             }
+        }
 
-            .lines{
-                position: relative;
-                top: -10rem;
-                left: 5.25rem;
+        .lines{
+            position: relative;
+            top: 33rem;
+            left: 5.3rem;
 
-                transform: scale(1.75);
-            }
+            transform: scale(1.5);
         }
 
         .images{
