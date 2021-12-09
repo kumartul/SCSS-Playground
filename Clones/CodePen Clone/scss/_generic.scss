@@ -58,6 +58,7 @@
         background-color: hsla(228, 12%, 40%, 1);
     }
 }
+
 .brown { color: #a88038; }
 .yellow { color: #e1ca72; }
 .white { color: hsla(0, 0%, 100%, 1); }
@@ -65,3 +66,10 @@
 .purple { color: #9f8198; }
 .orange { color: #de7300; }
 .blue { color: #7a99ad; }
+
+@mixin enter-exit-animation{
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
