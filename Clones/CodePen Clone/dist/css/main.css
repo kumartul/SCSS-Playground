@@ -599,7 +599,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 3rem;
-  width: calc(100vw - 21rem - 70rem);
+  width: calc(100vw - 21rem - 75rem);
 }
 
 .salient-features .features-container .features details {
@@ -635,6 +635,14 @@ header {
   background-color: rgba(19, 20, 23, 0.1);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.salient-features .features-container .features .lines {
+  position: relative;
+  top: -10rem;
+  left: 5.25rem;
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
 }
 
 .salient-features .features-container .images {

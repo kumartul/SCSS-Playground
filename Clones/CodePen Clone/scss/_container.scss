@@ -314,7 +314,7 @@
 
             padding: 0 3rem;
 
-            width: calc(100vw - 21rem - 70rem);
+            width: calc(100vw - 21rem - 75rem);
 
             details{
                 font-family: Lato;
@@ -355,6 +355,14 @@
 
                     transition: all 0.3s ease;
                 }
+            }
+
+            .lines{
+                position: relative;
+                top: -10rem;
+                left: 5.25rem;
+
+                transform: scale(1.75);
             }
         }
 
