@@ -2,7 +2,7 @@
     background-color: $secondary;
 
     width: calc(100% - 18.8rem);
-    height: auto;
+    height: 2500vh;
 
     overflow: hidden;
 
@@ -261,5 +261,135 @@
         z-index: 0;
 
         width: 45rem;
+    }
+}
+
+.salient-features{
+    padding: 4.5rem 0;
+
+    background-color: rgba(30, 31, 38, 0.5);
+
+    position: relative;
+    top: 10rem;
+    left: 0;
+
+    height: 100vh;
+
+    h2{
+        color: white;
+        font-size: 2.7rem;
+        font-family:  sans-serif;
+
+        text-align: center;
+    }
+    p{
+        text-align: center;
+
+        margin: 1rem 0;
+
+        a{
+            color: hsla(196, 100%, 73%, 1);
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: Lato;
+    
+            line-height: 1.5;
+    
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+    .features-container{
+        @include flex-row;
+
+        margin: 3rem 0;
+
+        width: calc(100vw - 21rem);
+        height: 90%;
+
+        .features{
+            @include flex-col;
+
+            padding: 0 3rem;
+
+            width: calc(100vw - 21rem - 70rem);
+
+            details{
+                font-family: Lato;
+
+                border-radius: 0.6rem;
+
+                cursor: pointer;
+
+                transition: all 0.3s ease;
+
+                summary{
+                    color: white;
+                    font-weight: 700;
+                    font-size: 1.65rem;
+                }
+                p{
+                    color: hsla(230, 12%, 80%, 1);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+
+                    line-height: 1.5;
+
+                    text-align: left;
+                    
+                    margin: 0.5rem 0 0;
+                }
+
+                &[open]{
+                    background-color: hsla(225, 10%, 8%, 1);
+
+                    padding: 1.5rem;
+                    
+                    margin-left: -1rem;
+                }
+
+                &:hover{
+                    background-color: rgba(19, 20, 23, 0.1);
+
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        .images{
+            width: calc(100vw - 21rem - 42rem);
+
+            img{
+                width: calc(100vw - 21rem - 42rem);
+                height: 75vh;
+
+                position: absolute;
+                right: 0;
+
+                @include enter-exit-animation;
+
+                &:first-of-type{
+                    display: block;
+
+                    opacity: 1;
+
+                    transform: translateY(0);
+                }
+
+                &:nth-of-type(2),
+                &:nth-of-type(3),
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:last-of-type{
+                    display: none;
+
+                    opacity: 0;
+
+                    transform: translateY(100%);
+                }
+            }
+        }
     }
 }
