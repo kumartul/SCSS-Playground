@@ -1,0 +1,65 @@
+.footer{
+    background-color: black;
+
+    position: relative;
+    top: 14rem;
+
+    padding: 4rem 2rem 4rem 3rem;
+
+    @include flex-row;
+    @include content-vertical-center;
+
+    justify-content: space-between;
+    
+    a,
+    strong{
+        color: hsla(233, 10%, 64%, 1);    
+        font-size: 1.5rem;
+        font-family: Lato;
+
+        line-height: 1.5;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+    .footlinks{
+        p{
+            margin: 0.5rem 0;
+
+            strong{
+                color: white;   
+    
+                margin-right: 0.8rem;
+            }
+            a{
+                margin-right: 0.8rem;
+            }
+        }
+    }
+
+    .info{
+        text-align: right;
+
+        svg{
+            width: 15rem;
+        }
+
+        p{
+            color: hsla(233, 10%, 64%, 1);
+            font-size: 1.2rem;
+            font-family: Lato;
+
+            margin: 0.5rem;
+
+            a{
+                font-size: 1.2rem !important;
+            }
+
+            &:first-of-type{
+                margin-top: 1rem;
+            }
+        }
+    }
+}

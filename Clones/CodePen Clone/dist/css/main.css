@@ -258,6 +258,72 @@ header {
   background-color: #5a5f72;
 }
 
+.footer {
+  background-color: black;
+  position: relative;
+  top: 14rem;
+  padding: 4rem 2rem 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a,
+.footer strong {
+  color: #9a9cac;
+  font-size: 1.5rem;
+  font-family: Lato;
+  line-height: 1.5;
+}
+
+.footer a:hover,
+.footer strong:hover {
+  color: white;
+}
+
+.footer .footlinks p {
+  margin: 0.5rem 0;
+}
+
+.footer .footlinks p strong {
+  color: white;
+  margin-right: 0.8rem;
+}
+
+.footer .footlinks p a {
+  margin-right: 0.8rem;
+}
+
+.footer .info {
+  text-align: right;
+}
+
+.footer .info svg {
+  width: 15rem;
+}
+
+.footer .info p {
+  color: #9a9cac;
+  font-size: 1.2rem;
+  font-family: Lato;
+  margin: 0.5rem;
+}
+
+.footer .info p a {
+  font-size: 1.2rem !important;
+}
+
+.footer .info p:first-of-type {
+  margin-top: 1rem;
+}
+
 .container {
   background-color: #131417;
   width: calc(100% - 18.8rem);
