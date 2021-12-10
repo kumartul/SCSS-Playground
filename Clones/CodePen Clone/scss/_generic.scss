@@ -73,3 +73,15 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+@mixin standard-hyperlink{
+    color: hsla(196, 100%, 73%, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Lato;
+
+    line-height: 1.5;
+
+    &:hover{
+        color: white;
+    }
+}
