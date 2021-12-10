@@ -288,16 +288,7 @@
         margin: 1rem 0;
 
         a{
-            color: hsla(196, 100%, 73%, 1);
-            font-size: 1.5rem;
-            font-weight: 400;
-            font-family: Lato;
-    
-            line-height: 1.5;
-    
-            &:hover{
-                color: white;
-            }
+            @include standard-hyperlink;
         }
     }
 
@@ -403,6 +394,87 @@
 
                     transform: translateY(100%);
                 }
+            }
+        }
+    }
+}
+
+.technologies{
+    padding: 8rem 2.5rem;
+
+    position: relative;
+    top: 10rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+    z-index: 99;
+
+    .card{
+        padding: 4.5rem 3rem;
+
+        cursor: pointer;
+
+        background-color: hsla(223, 14%, 20%, 1);
+        
+        border-radius: 0.6rem;
+
+        box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.25);
+
+        transition: all 0.3 ease;
+
+        @include flex-col;
+        @include content-center;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        h2{
+            position: relative;
+            bottom: -1.25rem;
+
+            color: hsla(196, 100%, 73%, 1);
+            font-size: 2.1rem;
+            font-weight: 700;
+            font-family: Lato;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+
+            h2{
+                color: white;
+            }
+
+            transition: all 0.3s ease;
+        }
+    }
+
+    .text-card{
+        font-family: Lato;
+
+        h2{
+            color: white;
+            font-size: 2.7rem;
+            font-weight: bold;
+
+            line-height: 1.2;
+        }
+        p{
+            color: hsla(230, 12%, 80%, 1);
+            font-size: 1.5rem;
+            font-weight: 400;
+            
+            line-height: 1.5;
+
+            margin: 1rem 0;
+        }
+        span{
+            a{
+                @include standard-hyperlink;
             }
         }
     }
