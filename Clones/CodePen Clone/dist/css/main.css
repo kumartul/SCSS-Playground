@@ -775,6 +775,121 @@ header {
   color: white;
 }
 
+.teams {
+  background-color: #1e1f26;
+  position: relative;
+  top: 20rem;
+  width: 95%;
+  margin: auto;
+  padding: 4.5rem;
+  border-radius: 0.6rem;
+  z-index: 1000000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams h2 {
+  color: white;
+  font-size: 2.7rem;
+  font-family: Lato;
+  font-weight: bolder;
+}
+
+.teams button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+  background-color: #49d073;
+  color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.teams button:hover {
+  background-color: #258e48;
+  color: white;
+}
+
+.teams p {
+  width: 52.5%;
+  color: #c6c8d2;
+  font-size: 1.5rem;
+  font-family: Lato;
+  line-height: 1.5;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.teams p span {
+  margin: 0 2px;
+  padding: 1.875px 5.625px;
+  background-color: #ffdc42;
+  border-radius: 2px;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.teams h3 {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 700;
+  font-family: Lato;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.teams .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.teams .images img {
+  width: 10%;
+  margin: 1rem;
+}
+
+.bottom-lines {
+  position: relative;
+  top: 15rem;
+  right: -80rem;
+}
+
 @-webkit-keyframes cursor-blink {
   from {
     opacity: 0%;

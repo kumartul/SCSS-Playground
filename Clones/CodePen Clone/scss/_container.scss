@@ -479,3 +479,94 @@
         }
     }
 }
+
+.teams{
+    background-color: rgba(30, 31, 38, 1);
+
+    position: relative;
+    top: 20rem;
+    
+    width: 95%;
+    
+    margin: auto;
+    padding: 4.5rem;
+
+    border-radius: 0.6rem;
+
+    z-index: 1000000000;
+
+    @include flex-col;
+    @include content-center;
+
+    h2{
+        color: white;
+        font-size: 2.7rem;
+        font-family: Lato;
+        font-weight: bolder;
+    }
+
+    button{
+        @include btn-primary;
+
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        margin-bottom: 5rem;
+    }
+
+    p{
+        width: 52.5%;
+
+        color: hsla(230, 12%, 80%, 1);
+        font-size: 1.5rem;
+        font-family: Lato;
+
+        line-height: 1.5;
+
+        text-align: center;
+
+        margin: 2rem 0;
+
+        span{
+            margin: 0 2px;
+            padding: 1.875px 5.625px;
+
+            background-color: hsla(49, 100%, 63%, 1);
+
+            border-radius: 2px;
+
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
+
+    h3{
+        color: white;
+        font-size: 2.1rem;
+        font-weight: 700;
+        font-family: Lato;
+
+        line-height: 1.2;
+
+        margin: 0 0 1rem;
+    }
+    
+    .images{
+        @include content-center;
+
+        flex-wrap: wrap;
+
+        img{
+            width: 10%;
+
+            margin: 1rem;
+        }
+    }
+}
+
+
+.bottom-lines{
+    position: relative;
+    top: 15rem;
+    right: -80rem;
+}
